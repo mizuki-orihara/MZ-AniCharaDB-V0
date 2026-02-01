@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "schema_prefix": "MiZu_Status_Report",
+    "version": "v1.2601.01"
+  },
+  "control": {
+    "phase": "null",
+    "gate_open": false,
+    "current_task_id": null
+  },
+  "result": {
+    "last_update": null,
+    "status": "standby",
+    "message": "Waiting for manual gate operation.",
+    "is_error": false
+  },
+  "stats": {
+    "total_processed": 0,
+    "success": 0,
+    "failure": 0
+  },
+  "current_target": {
+    "file_path": null,
+    "logical_state": null
+  }
+}
