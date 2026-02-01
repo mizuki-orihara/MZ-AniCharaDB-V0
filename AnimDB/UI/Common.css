@@ -1,0 +1,160 @@
+﻿/* =========================
+   Common.css (Base)
+   DB / 業務UI 向け土台
+   ========================= */
+
+/* ---------- カラーパレット ---------- */
+:root {
+    /* ベース */
+    --bg-main: #f6f7f5; /* ほんのり暖色寄りオフホワイト */
+    --bg-sub: #eef1ed; /* パネル・テーブル背景 */
+    --bg-card: #ffffff;
+    /* 文字 */
+    --text-main: #2f3330; /* 真っ黒にしない */
+    --text-sub: #5a5f5c;
+    --text-mute: #8a908c;
+    /* ボーダー */
+    --border-light: #d6dbd7;
+    --border-main: #c3c9c4;
+    /* アクセント（薄め・共通） */
+    --accent-soft: #a9c1b3; /* セージ系 */
+    --accent-calm: #9fb6c1; /* グレイッシュブルー */
+    --accent-warm: #c1b3a9; /* サンド系 */
+    /* 状態（まだ弱め） */
+    --state-info: #b6c9c1;
+}
+
+/* ---------- ベースリセット ---------- */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- 全体 ---------- */
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ---------- レイアウト要素 ---------- */
+header,
+footer {
+    background: var(--bg-sub);
+    border-bottom: 1px solid var(--border-light);
+}
+
+main {
+    padding: 16px;
+}
+
+/* ---------- 見出し ---------- */
+h1, h2, h3 {
+    margin: 0 0 0.6em 0;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+/* ---------- テキスト ---------- */
+p {
+    margin: 0 0 1em 0;
+}
+
+small {
+    color: var(--text-mute);
+}
+
+/* ---------- パネル / カード ---------- */
+.panel,
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+/* ---------- テーブル（DB系重要） ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+}
+
+th, td {
+    padding: 8px 10px;
+    border: 1px solid var(--border-light);
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background: var(--bg-sub);
+    color: var(--text-sub);
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background: #fafbfa;
+}
+
+/* ---------- フォーム ---------- */
+input,
+select,
+textarea {
+    background: #ffffff;
+    border: 1px solid var(--border-main);
+    border-radius: 3px;
+    padding: 6px 8px;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--text-mute);
+    }
+
+/* ---------- ボタン（中立） ---------- */
+button,
+.button {
+    background: var(--bg-sub);
+    border: 1px solid var(--border-main);
+    color: var(--text-main);
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    button:hover,
+    .button:hover {
+        background: var(--accent-soft);
+    }
+
+/* ---------- リンク ---------- */
+a {
+    color: #567c6f;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
