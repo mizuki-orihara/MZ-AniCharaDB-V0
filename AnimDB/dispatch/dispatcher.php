@@ -121,7 +121,7 @@ foreach ($files as $filePath) {
         if (in_array($segment, $dbIndex[$workName], true)) {
             // --- B. 同一セグメント(ID)が既に存在する場合 (重複) ---
             // セッションIDが不明な場合は timestamp を代用
-            $destDir = $trashBaseDir . ($timestamp ?: 'default');
+            $destDir = $Discard_Buffer . ($timestamp ?: 'default');
             $status['history'][0]['counts']['discard']++;
         } else {
             // --- C. 作品名は一致するが、個体(ID)が異なる場合 (要確認) ---
