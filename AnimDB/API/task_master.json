@@ -1,0 +1,38 @@
+﻿{
+  "gate_open": {
+    "receiver": true,
+    "processor": true,
+    "dispatcher": true,
+    "register_new": true,
+    "merge_register": true,
+    "indexer": false
+  },
+
+  "queue_count": {
+    "temp_folders": 0,
+    "validated_items": 0,
+    "merge_standby": 0,
+    "register_pending": 0,
+    "index_pending": 0
+  },
+
+  "active_jobs": {
+    "controller": false,
+    "worker": false
+  },
+
+  "db_lock": {
+    "locked": false,
+    "owner": null,
+    "since": null,
+    "target": null
+  },
+
+  "last_update": {
+    "timestamp": "2026-01-30 16:30:00",
+    "actor": "system",
+    "action": "init"
+  },
+
+  "system_alert": "normal"
+}
